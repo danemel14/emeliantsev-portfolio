@@ -326,7 +326,9 @@ p {
 }
 
 .project-grid {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  max-width: 920px;
+  margin: 0 auto;
 }
 
 .project-image {
@@ -366,17 +368,19 @@ p {
 .media-frame iframe {
   display: block;
   width: 100%;
-  height: 100%;
-  min-height: 240px;
   border: 0;
 }
 
 .media-frame video {
+  min-height: 240px;
+  height: 100%;
   object-fit: cover;
 }
 
 .media-frame iframe {
   aspect-ratio: 16 / 9;
+  min-height: 320px;
+  height: auto;
 }
 
 .project-body {
